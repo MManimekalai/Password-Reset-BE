@@ -12,7 +12,7 @@ require('dotenv').config();
 // HTTP_SERVER.use(cors());
 // CONFIGURING CORS
 HTTP_SERVER.use(cors({
-  origin: 'http://localhost:3000', // Allow requests from your local frontend
+  origin: 'https://mmurugesan-password-reset.netlify.app', // Allow requests from your local frontend
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 }));
 
