@@ -33,5 +33,12 @@ HTTP_SERVER.listen(PORT, "0.0.0.0", (err) => {
   console.log(`Listening on PORT ${PORT}`);
 });
 
+// Define a simple route for testing
+HTTP_SERVER.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+
 // INJECTING API SERVER
 HTTP_SERVER.use("/", require("./app"));
+
